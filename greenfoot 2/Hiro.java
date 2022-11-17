@@ -14,17 +14,16 @@ public class Hiro extends Actor
      */
     public void act()
     {
-        KontrolKeyboard();
+        KontrolKeyboad();
     }
     
-    public void KontrolKeyboard()
-    {
+    public void KontrolKeyboad(){
         if(Greenfoot.isKeyDown("up"))
         {
             move(5);
         }
         
-        if(Greenfoot.isKeyDwon("down"))
+        if(Greenfoot.isKeyDown("down"))
         {
             move(-5);
         }
@@ -40,5 +39,6 @@ public class Hiro extends Actor
             belok-=2;
             setRotation(belok);
         }
+
     }
 }
